@@ -1,7 +1,9 @@
 ### 文件介绍
 
  > h5手机端的代码
+
  > resource:spa.md文件所需资源
+ 
  > pc文件夹：pc端的代码
  > mockServer:模拟的数据目录
  > static:公共的静态资源文件img/css/js/font
