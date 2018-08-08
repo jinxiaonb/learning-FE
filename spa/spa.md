@@ -47,7 +47,7 @@
 
 ##### 配置webpack.h5.base.conf.js和webpack.h5.dev.conf.js文件,详细说明请移驾到该文件
 ##### 在h5新建例子App.vue/app.js/app.html和components文件夹中的SelfNav.vue
-* 配置完之后在package.json的scripts里增加一行"hdev": "webpack-dev-server --inline --config webpack.h5.dev.conf.js --open"
+* 1、配置完之后在package.json的scripts里增加一行 "hdev": "webpack-dev-server --inline --config webpack.h5.dev.conf.js --open",该命令启动了webpack-dev-server服务器，并不会在本地磁盘上生成mobile文件
 * 命令行运行npm run hdev,此时错误等着你
 ![运行错误](./resource/1.png)
 ##### 缺少babel-core,该包是babel核心编译包，那就安装咯！ 
@@ -55,6 +55,11 @@
 
 * 继续运行npm run hdev,又报了vue-template-compiler依赖未安装
 * npm install --save-dev vue-template-compiler
+
 == vue-template-compiler:
 
 * 此时就可以看到运行成功了
+
+* 2、配置生产环境的编译命令 "hprod": "webpack --config webpack.h5.prod.conf.js"
+
+* 运行npm run hprod
