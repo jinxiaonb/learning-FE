@@ -1,4 +1,4 @@
-### 文件介绍
+### 一、文件介绍
 
  > h5手机端的代码
 
@@ -37,10 +37,11 @@
  > webpack.h5.test.conf.js:h5测试配置文件，会使用到基础配置文件
 
 
+### 二、初始化文件
+
 #### cd spa && npm init 创建了package.json文件，选项全部默认
 
-
-安装：npm install --save-dev webpack webpack-cli webpack-dev-server webpack-merge vue vue-loader  babel-loader  babel-preset-env path html-webpack-plugin
+##### 安装：npm install --save-dev webpack webpack-cli webpack-dev-server webpack-merge vue vue-loader  babel-loader  babel-preset-env path html-webpack-plugin
 * webpack3之后就需要再安装webpack-cli
 * npm安装慢的话，[淘宝cnpm欢迎你](https://npm.taobao.org/ "我的npm镜像")
 
@@ -49,3 +50,11 @@
 * 配置完之后在package.json的scripts里增加一行"hdev": "webpack-dev-server --inline --config webpack.h5.dev.conf.js --open"
 * 命令行运行npm run hdev,此时错误等着你
 ![运行错误](./resource/1.png)
+##### 缺少babel-core,该包是babel核心编译包，那就安装咯！ 
+* npm install --save-dev babel-core
+
+* 继续运行npm run hdev,又报了vue-template-compiler依赖未安装
+* npm install --save-dev vue-template-compiler
+== vue-template-compiler:
+
+* 此时就可以看到运行成功了
