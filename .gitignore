@@ -1,4 +1,4 @@
 spa/node_modules
 spa/web
 spa/mobile
-
+spa/package-lock.json

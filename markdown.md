@@ -38,6 +38,8 @@
 # 代码块 ```xxx```
 
 # 链接：方块括号后面紧接着圆括号并插入网址链接[]()
-
 ### 例子看我：[金霄的官网](http://www.brotherxiao.com "brotherxiao")
+
+# 图片
+### 例子看我：![brotherxiao ico](http://www.brotherxiao.com/favicon.ico)
 
