@@ -1,3 +1,5 @@
+## 第一天
+
 ### 一、文件介绍
 
  > h5手机端的代码
@@ -63,3 +65,21 @@
 * 2、配置生产环境的编译命令 "hprod": "webpack --config webpack.h5.prod.conf.js"
 
 * 运行npm run hprod
+
+
+## 第二天
+
+在昨天的基础上在App.vue的文件的style加上css样式，报了css解析出错，如下图所示
+![css解析错误](./resource/3.png)
+
+* 需要在webpack配置文件中配置css解析loader,npm安装style-loader和css-loader> npm install --save-dev style-loader css-loader,配置文件参考webpack.h5.base.conf.js中的plugin部分
+
+* 此时发现，css样式是插入到html文件的head中，这不符合前端的文件管理，需要拆散它们
+
+* 从html文件中抽离css样式用到mini-css-extract-plugin插件，而extract-text-webpack-plugin已经被废弃了；npm install --save-dev mini-css-extract-plugin；并把上一步配置的style-loader注释掉，再运行，css文件已抽离出来
+
+#### 为项目添加scss支持，安装sass-loader和node-sass
+
+* webpack上配置sass，把之前插件上加载css部分再加上sass的loader
+
+ 

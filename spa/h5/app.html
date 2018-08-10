@@ -11,7 +11,7 @@
 
 	<body>
 		<div id="app">
-			<app title="Shapes" :items="shapes">
+			<app title="这个例子使用的是vue的作用域插槽slot-scope" :items="shapes">
                 <template slot-scope="shape">
                     <div>{{ shape.name }} <small>({{ shape.sides }} sides)</small></div>
                 </template>

@@ -13,6 +13,7 @@
                 </div>
             </div> 
         </div>
+        <div><button class="button">button</button></div>
     </div>
     
 </template>
@@ -22,13 +23,13 @@
 import SelfNav from './components/SelfNav.vue';
 
 export default {
-    props:['title','items'],
+    props:['title', 'items'],
     components:{ SelfNav } ,
     computed:{
         
     },
     created:function(){
-        if(__DEV__){
+        if(__DEV__){//判断是否是开发环境，是，则打印调试代码，否则不打印
             console.log("........");
         }
     },
@@ -53,8 +54,14 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped lang="scss">
+@import './resource/scss/components/_button.scss';
+@import './resource/scss/test.scss';
 
+.title{
+    color: $def-color;
+    font-size: 15px;
+}
 </style>
 
 
