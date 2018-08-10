@@ -13,7 +13,7 @@
                 </div>
             </div> 
         </div>
-        <div><button class="button">button</button></div>
+        <div><button class="button">button <i class="iconfont">&#xe6c3;</i></button></div>
     </div>
     
 </template>
